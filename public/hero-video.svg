@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87ceeb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:1" />
+    </linearGradient>
+    <animateTransform
+      attributeName="transform"
+      attributeType="XML"
+      type="translate"
+      values="0,0;50,0;0,0"
+      dur="10s"
+      repeatCount="indefinite"/>
+  </defs>
+  <!-- Sky -->
+  <rect width="800" height="600" fill="url(#skyGrad)"/>
+  <!-- Clouds -->
+  <circle cx="200" cy="100" r="30" fill="#ffffff" opacity="0.8">
+    <animateTransform attributeName="transform" type="translate" values="0,0;100,0;0,0" dur="20s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="250" cy="90" r="25" fill="#ffffff" opacity="0.8">
+    <animateTransform attributeName="transform" type="translate" values="0,0;100,0;0,0" dur="20s" repeatCount="indefinite"/>
+  </circle>
+  <!-- Buildings in distance -->
+  <rect x="0" y="300" width="100" height="200" fill="#8B7355"/>
+  <rect x="150" y="250" width="80" height="250" fill="#696969"/>
+  <rect x="300" y="200" width="120" height="300" fill="#2F4F4F"/>
+  <!-- Foreground buildings -->
+  <rect x="500" y="350" width="150" height="150" fill="#D2B48C"/>
+  <rect x="650" y="300" width="100" height="200" fill="#A0522D"/>
+  <!-- Windows -->
+  <rect x="520" y="380" width="15" height="15" fill="#FFFF99"/>
+  <rect x="550" y="380" width="15" height="15" fill="#FFFF99"/>
+  <rect x="520" y="410" width="15" height="15" fill="#FFFF99"/>
+  <!-- People -->
+  <circle cx="600" cy="480" r="8" fill="#FF6347"/>
+  <rect x="595" y="488" width="10" height="20" fill="#FF6347"/>
+  <!-- Trees -->
+  <circle cx="100" cy="450" r="40" fill="#228B22"/>
+  <rect x="95" y="490" width="10" height="60" fill="#8B4513"/>
+  <!-- Text overlay -->
+  <text x="400" y="550" text-anchor="middle" font-family="Arial" font-size="18" fill="#333" font-weight="bold">Rural Studio</text>
+  <text x="400" y="575" text-anchor="middle" font-family="Arial" font-size="14" fill="#666">Architecture & Community</text>
+</svg>

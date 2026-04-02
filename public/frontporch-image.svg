@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="bookGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fff3e0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffcc02;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="400" height="300" fill="#f9f9f9"/>
+  <!-- Books -->
+  <rect x="100" y="120" width="80" height="120" fill="url(#bookGrad)" stroke="#f57c00" stroke-width="2"/>
+  <rect x="120" y="140" width="60" height="100" fill="#e8f5e8" stroke="#4caf50" stroke-width="2"/>
+  <rect x="140" y="160" width="40" height="80" fill="#e3f2fd" stroke="#2196f3" stroke-width="2"/>
+  <!-- Journal title -->
+  <text x="200" y="100" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="#333">Front Porch</text>
+  <text x="200" y="125" text-anchor="middle" font-family="Arial" font-size="16" fill="#666">Journal</text>
+  <!-- Content lines -->
+  <line x1="110" y1="150" x2="170" y2="150" stroke="#666" stroke-width="1"/>
+  <line x1="110" y1="170" x2="170" y2="170" stroke="#666" stroke-width="1"/>
+  <line x1="110" y1="190" x2="170" y2="190" stroke="#666" stroke-width="1"/>
+  <line x1="130" y1="210" x2="170" y2="210" stroke="#666" stroke-width="1"/>
+  <!-- Coffee cup -->
+  <ellipse cx="280" cy="200" rx="20" ry="15" fill="#8d6e63"/>
+  <rect x="270" y="185" width="20" height="25" fill="#8d6e63"/>
+  <text x="200" y="280" text-anchor="middle" font-family="Arial" font-size="14" fill="#666">Digital Publication</text>
+</svg>
