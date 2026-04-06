@@ -37,7 +37,7 @@ export default function Contact() {
           <div className="contact-info">
             <div className="contact-item">
               <h3>Email</h3>
-              <a href="contact@spaceandcontext.com">co@spaceandcontext.com</a>
+              <a href="contact@spaceandcontext.com">contact@spaceandcontext.com</a>
             </div>
             <div className="contact-item">
               <h3>Phone</h3>
@@ -45,7 +45,7 @@ export default function Contact() {
             </div>
             <div className="contact-item">
               <h3>Location</h3>
-              <p>Remote<br />Remote</p>
+              <p>Remote<br /></p>
             </div>
           </div>
 
