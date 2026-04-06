@@ -37,11 +37,11 @@ export default function Contact() {
           <div className="contact-info">
             <div className="contact-item">
               <h3>Email</h3>
-              <a href="mailto:info@spaceandcontext.org">info@spaceandcontext.org</a>
+              <a href="contact@spaceandcontext.com">co@spaceandcontext.com</a>
             </div>
             <div className="contact-item">
               <h3>Phone</h3>
-              <p>+1 (555) 123-4567</p>
+              <p>+91 9739341133</p>
             </div>
             <div className="contact-item">
               <h3>Location</h3>

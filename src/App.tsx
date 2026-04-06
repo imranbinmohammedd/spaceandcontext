@@ -35,20 +35,20 @@ function NavHeader() {
           <span className="logo-title">Space & Context</span>
         </div>
 
-        <nav className="main-nav">
-          {menuItems.map((item) => (
-            <a
-              key={item.name}
-              href="#"
-              onClick={(e) => {
-                e.preventDefault();
-                handleNavigation(item.path);
-              }}
-            >
-              {item.name}
-            </a>
-          ))}
-        </nav>
+        <nav className="main-nav desktop-only">
+  {menuItems.map((item) => (
+    <a
+      key={item.name}
+      href="#"
+      onClick={(e) => {
+        e.preventDefault();
+        handleNavigation(item.path);
+      }}
+    >
+      {item.name}
+    </a>
+  ))}
+</nav>
 
         <div
           className={`hamburger ${isMenuOpen ? 'hidden' : ''}`}

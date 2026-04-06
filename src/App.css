@@ -17,6 +17,18 @@ body {
   font-size: 16px;
 }
 
+.desktop-only {
+  display: none;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
 /* Header */
 .header {
   position: fixed;
@@ -70,8 +82,7 @@ body {
 }
 
 .main-nav {
-  display: flex;
-  gap: 40px;
+  display: none;
 }
 
 .main-nav a {
@@ -100,7 +111,7 @@ body {
 }
 
 .hamburger {
-  display: none;
+  display: flex;
   flex-direction: column;
   gap: 6px;
   cursor: pointer;

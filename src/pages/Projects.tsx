@@ -15,7 +15,7 @@ export default function Projects() {
       title: 'Rural Housing Project',
       category: 'Residential',
       description: 'Designing affordable, sustainable housing solutions for underserved rural communities using locally sourced materials and passive design strategies.',
-      image: 'https://images.unsplash.com/photo-1469022563149-aa64dbd37dae?w=600&h=400&fit=crop'
+      image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&h=400&fit=crop'
     },
     {
       id: 3,
