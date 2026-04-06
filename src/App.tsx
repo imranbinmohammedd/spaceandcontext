@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
+import { HashRouter  as Router, Routes, Route, useNavigate } from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -31,7 +31,7 @@ function NavHeader() {
       {/* Header */}
       <header className="header">
         <div className="logo" onClick={() => handleNavigation('/')} style={{ cursor: 'pointer' }}>
-          <img src="/spaceandcontext/logo.svg" alt="Space & Context Logo" className="logo-image" />
+          <img src="/logo.svg" alt="Space & Context Logo" className="logo-image" />
           <span className="logo-title">Space & Context</span>
         </div>
 
