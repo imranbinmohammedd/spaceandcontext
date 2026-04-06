@@ -14,7 +14,7 @@ export default function Study() {
       <section className="study-section" style={{ paddingTop: '120px' }}>
         <div className="study-content">
           <div className="study-text">
-            <h2>Study With Us</h2>
+            <h2>Services</h2>
             <p>
               Join our community of passionate architects and designers committed to making a difference. Our educational approach integrates rigorous academic training with real-world projects that matter to real communities.
             </p>

@@ -66,7 +66,7 @@ export default function Projects() {
       <section className="projects-section" style={{ paddingTop: '120px' }}>
         <div className="container">
           <div className="projects-title">
-            <h2>Our Projects</h2>
+            <h2>Portfolio</h2>
             <p>Explore our portfolio of community-driven architectural projects creating lasting impact in rural communities</p>
           </div>
           <div className="projects-grid">

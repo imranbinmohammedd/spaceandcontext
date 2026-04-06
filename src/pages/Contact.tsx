@@ -45,7 +45,7 @@ export default function Contact() {
             </div>
             <div className="contact-item">
               <h3>Location</h3>
-              <p>West Alabama Region<br />United States</p>
+              <p>Remote<br />Remote</p>
             </div>
           </div>
 

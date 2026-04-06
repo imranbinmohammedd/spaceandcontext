@@ -45,7 +45,7 @@ export default function News() {
     <main>
       <section className="news-section" style={{ paddingTop: '120px' }}>
         <div className="container">
-          <h2>News From The Field</h2>
+          <h2>Blog From The Field</h2>
           <div className="news-grid">
             {newsItems.map((item) => (
               <article key={item.id} className="news-item">

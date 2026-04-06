@@ -132,7 +132,7 @@ export default function Home() {
       <section style={{ padding: '120px 5%', background: '#f9f9f9' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '80px', alignItems: 'center' }}>
           <div>
-            <h2 style={{ fontSize: '2.8rem', fontWeight: 300, marginBottom: '25px', color: '#2c3e50', lineHeight: 1.2 }}>Study With Us</h2>
+            <h2 style={{ fontSize: '2.8rem', fontWeight: 300, marginBottom: '25px', color: '#2c3e50', lineHeight: 1.2 }}>Services</h2>
             <p style={{ fontSize: '1.05rem', color: '#666', lineHeight: 1.8, marginBottom: '20px' }}>Join our community of passionate architects and designers committed to making a difference. Our educational approach integrates rigorous academic study with hands-on project experience.</p>
             <ul style={{ listStyle: 'none', margin: '30px 0' }}>
               {['Hands-on project experience in real communities', 'Mentorship from practicing architects', 'Focus on sustainable design practices', 'Collaboration with community partners', 'Development of technical and leadership skills'].map((item, idx) => (
@@ -152,7 +152,7 @@ export default function Home() {
       {/* News Section */}
       <section style={{ padding: '120px 5%', background: '#ffffff' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-          <h2 style={{ fontSize: '2.8rem', fontWeight: 300, color: '#2c3e50', textAlign: 'center', marginBottom: '80px', letterSpacing: '-0.5px' }}>News From The Field</h2>
+          <h2 style={{ fontSize: '2.8rem', fontWeight: 300, color: '#2c3e50', textAlign: 'center', marginBottom: '80px', letterSpacing: '-0.5px' }}>Blog From The Field</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '50px' }}>
             {news.map((item) => (
               <article key={item.id} style={{ padding: '40px', background: '#f9f9f9', borderLeft: '3px solid #2c3e50', transition: 'all 0.3s ease' }} onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateX(5px)'; e.currentTarget.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.08)'; }} onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateX(0)'; e.currentTarget.style.boxShadow = 'none'; }}>
@@ -174,15 +174,15 @@ export default function Home() {
           <div style={{ display: 'flex', justifyContent: 'center', gap: '60px', flexWrap: 'wrap', marginBottom: '50px' }}>
             <div style={{ textAlign: 'center' }}>
               <h3 style={{ fontSize: '0.9rem', fontWeight: 600, color: '#2c3e50', letterSpacing: '1px', textTransform: 'uppercase', marginBottom: '10px' }}>Email</h3>
-              <a href="mailto:info@spaceandcontext.org" style={{ color: '#666', textDecoration: 'none', fontSize: '1rem' }} onMouseEnter={(e) => { e.currentTarget.style.color = '#2c3e50'; e.currentTarget.style.textDecoration = 'underline'; }} onMouseLeave={(e) => { e.currentTarget.style.color = '#666'; e.currentTarget.style.textDecoration = 'none'; }}>info@spaceandcontext.org</a>
+              <a href="mailto:contact@spaceandcontext.com" style={{ color: '#666', textDecoration: 'none', fontSize: '1rem' }} onMouseEnter={(e) => { e.currentTarget.style.color = '#2c3e50'; e.currentTarget.style.textDecoration = 'underline'; }} onMouseLeave={(e) => { e.currentTarget.style.color = '#666'; e.currentTarget.style.textDecoration = 'none'; }}>contact@spaceandcontext.com</a>
             </div>
             <div style={{ textAlign: 'center' }}>
               <h3 style={{ fontSize: '0.9rem', fontWeight: 600, color: '#2c3e50', letterSpacing: '1px', textTransform: 'uppercase', marginBottom: '10px' }}>Phone</h3>
-              <p style={{ color: '#666', fontSize: '1rem' }}>+1 (555) 123-4567</p>
+              <p style={{ color: '#666', fontSize: '1rem' }}>+91 9739341133</p>
             </div>
             <div style={{ textAlign: 'center' }}>
               <h3 style={{ fontSize: '0.9rem', fontWeight: 600, color: '#2c3e50', letterSpacing: '1px', textTransform: 'uppercase', marginBottom: '10px' }}>Location</h3>
-              <p style={{ color: '#666', fontSize: '1rem' }}>West Alabama Region</p>
+              <p style={{ color: '#666', fontSize: '1rem' }}>Remote</p>
             </div>
           </div>
 
