@@ -1,84 +1,60 @@
-import React from 'react';
-import '../App.css';
-
 export default function Projects() {
-  const projects = [
+  const sectors = [
     {
-      id: 1,
-      title: 'Community Center Renovation',
-      category: 'Community Spaces',
-      description: 'Transforming a historic building into a vibrant community hub featuring sustainable design principles, improved accessibility, and modern amenities while preserving architectural heritage.',
-      image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&h=400&fit=crop'
+      title: 'Residential',
+      description: 'Villas, apartments, housing, communities.',
+      image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=900&h=850&q=85',
+      imageAlt: 'Contemporary residential villa',
     },
     {
-      id: 2,
-      title: 'Rural Housing Project',
-      category: 'Residential',
-      description: 'Designing affordable, sustainable housing solutions for underserved rural communities using locally sourced materials and passive design strategies.',
-      image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&h=400&fit=crop'
+      title: 'Commercial',
+      description: 'Offices, retail, mixed-use.',
+      image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&h=850&q=85',
+      imageAlt: 'Modern commercial office buildings',
     },
     {
-      id: 3,
-      title: 'Agricultural Education Center',
-      category: 'Education',
-      description: 'Building sustainable facilities that connect communities with agricultural innovation, featuring hands-on learning spaces and agricultural demonstration areas.',
-      image: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&h=400&fit=crop'
+      title: 'Hospitality',
+      description: 'Hotels, resorts, restaurants.',
+      image: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&h=850&q=85',
+      imageAlt: 'Warm contemporary hospitality interior',
     },
     {
-      id: 4,
-      title: 'Water Infrastructure Project',
-      category: 'Infrastructure',
-      description: 'Engineering sustainable solutions for clean water access in remote areas, integrating community input into technical design processes.',
-      image: 'https://images.unsplash.com/photo-1581578731548-c64695c952952?w=600&h=400&fit=crop'
+      title: 'Institutional',
+      description: 'Education, healthcare, community.',
+      image: 'https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=900&h=850&q=85',
+      imageAlt: 'Contemporary institutional architecture',
     },
     {
-      id: 5,
-      title: 'Public Gathering Space',
-      category: 'Public Space',
-      description: 'Creating inclusive outdoor spaces that foster community connection and engagement, designed for cultural events and social gatherings.',
-      image: 'https://images.unsplash.com/photo-1465014849326-f0cead9f96c6?w=600&h=400&fit=crop'
+      title: 'Development & Masterplanning',
+      description: 'Large developments.',
+      image: 'https://images.unsplash.com/photo-1448630360428-65456885c650?auto=format&fit=crop&w=900&h=850&q=85',
+      imageAlt: 'Aerial view of a planned development',
     },
     {
-      id: 6,
-      title: 'School Expansion',
-      category: 'Education',
-      description: 'Expanding educational facilities to serve growing rural populations sustainably with flexible learning spaces and environmental literacy integration.',
-      image: 'https://images.unsplash.com/photo-1427504494785-cdde41ad2186?w=600&h=400&fit=crop'
+      title: 'Interiors',
+      description: 'Residential, commercial, workplace, hospitality.',
+      image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&h=850&q=85',
+      imageAlt: 'Refined contemporary interior with natural materials',
     },
-    {
-      id: 7,
-      title: 'Health Clinic Facility',
-      category: 'Healthcare',
-      description: 'Designing accessible healthcare facilities tailored to rural needs with emphasis on patient-centered design and community wellness.',
-      image: 'https://images.unsplash.com/photo-1576091160550-112405c3e141?w=600&h=400&fit=crop'
-    },
-    {
-      id: 8,
-      title: 'Community Garden',
-      category: 'Environmental',
-      description: 'Creating green spaces that promote food security and community health through participatory design and sustainable agriculture practices.',
-      image: 'https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?w=600&h=400&fit=crop'
-    }
   ];
 
   return (
-    <main>
-      <section className="projects-section" style={{ paddingTop: '120px' }}>
-        <div className="container">
-          <div className="projects-title">
-            <h2>Portfolio</h2>
-            <p>Explore our portfolio of community-driven architectural projects creating lasting impact in rural communities</p>
-          </div>
-          <div className="projects-grid">
-            {projects.map((project) => (
-              <div key={project.id} className="project-card">
-                <img src={project.image} alt={project.title} className="project-image" />
-                <div className="project-info">
-                  <span className="project-category">{project.category}</span>
-                  <h3>{project.title}</h3>
-                  <p>{project.description}</p>
-                </div>
-              </div>
+    <main className="portfolio-page">
+      <section className="portfolio-section" aria-labelledby="portfolio-title">
+        <div className="portfolio-container">
+          <p className="portfolio-eyebrow">Our sectors</p>
+          <h1 id="portfolio-title">Building for<br />diverse needs</h1>
+          <p className="portfolio-intro">
+            We work across a range of sectors, creating spaces that respond to different
+            people, places and purposes.
+          </p>
+          <div className="portfolio-grid">
+            {sectors.map((sector) => (
+              <article className="portfolio-sector" key={sector.title}>
+                <img src={sector.image} alt={sector.imageAlt} />
+                <h2>{sector.title}</h2>
+                <p>{sector.description}</p>
+              </article>
             ))}
           </div>
         </div>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../App.css';
+import { AboutCopy } from './About';
 
 export default function Home() {
   const projects = [
@@ -72,8 +73,8 @@ export default function Home() {
         <div className="hero-bg">
           <img
             className="hero-image"
-            src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1600&h=900&fit=crop"
-            alt="Architecture and design"
+            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2200&h=1400&q=85"
+            alt="Modern residential architecture surrounded by landscape"
             onError={(e) => { e.currentTarget.style.display = 'none'; }}
           />
           <div className="hero-fallback"></div>
@@ -92,16 +93,17 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', padding: '120px 5%', background: '#ffffff' }}>
+      <section id="home-about" style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', padding: '120px 5%', background: '#ffffff' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '80px', alignItems: 'center', width: '100%' }}>
           <div style={{ padding: '60px' }}>
-            <h2 style={{ fontSize: '2.8rem', fontWeight: 300, marginBottom: '25px', color: '#2c3e50', lineHeight: 1.2, letterSpacing: '-0.5px' }}>About Space & Context</h2>
-            <p style={{ fontSize: '1.05rem', color: '#666', lineHeight: 1.8, marginBottom: '35px' }}>Space & Context is an innovative architecture program dedicated to educating citizen architects who understand the profound relationship between design, community, and place. We believe that great architecture emerges from deep listening and genuine partnership with the communities we serve.</p>
-            <p style={{ fontSize: '1.05rem', color: '#666', lineHeight: 1.8, marginBottom: '35px' }}>Our work focuses on creating meaningful, sustainable solutions that address real needs in underserved communities, combining rigorous design thinking with community involvement and environmental responsibility.</p>
-            <a href="/projects" style={{ display: 'inline-block', padding: '14px 40px', background: '#2c3e50', color: '#ffffff', textDecoration: 'none', fontWeight: 500, fontSize: '14px', letterSpacing: '0.5px', border: '2px solid #2c3e50', cursor: 'pointer', transition: 'all 0.3s ease' }} onMouseEnter={(e) => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = '#2c3e50'; }} onMouseLeave={(e) => { e.currentTarget.style.background = '#2c3e50'; e.currentTarget.style.color = '#ffffff'; }}>View Our Projects</a>
+            <h2 style={{ fontSize: '2.8rem', fontWeight: 300, marginBottom: '25px', color: '#2c3e50', lineHeight: 1.2 }}>About Space &amp; Context</h2>
+            <div className="home-about-copy"><AboutCopy /></div>
+            <a href="/projects" style={{ display: 'inline-block', padding: '14px 40px', background: '#2c3e50', color: '#ffffff', textDecoration: 'none', fontWeight: 500, fontSize: '14px', border: '2px solid #2c3e50', cursor: 'pointer', transition: 'all 0.3s ease' }}>
+              View Our Projects
+            </a>
           </div>
           <div style={{ display: 'flex', justifyContent: 'center' }}>
-            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=500&fit=crop" alt="Team collaboration" style={{ width: '100%', height: 'auto', borderRadius: 0, boxShadow: '0 10px 40px rgba(0, 0, 0, 0.1)' }} />
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=500&fit=crop" alt="Team collaborating around an architecture project" style={{ width: '100%', height: 'auto', borderRadius: 0, boxShadow: '0 10px 40px rgba(0, 0, 0, 0.1)' }} />
           </div>
         </div>
       </section>

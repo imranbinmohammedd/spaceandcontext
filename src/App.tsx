@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
-import { HashRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, useLocation, useNavigate } from 'react-router-dom';
 import './App.css';
+import './pages/About.css';
 import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
@@ -13,28 +14,26 @@ function NavHeader() {
   const [showHeader, setShowHeader] = useState(true);
   const [scrolled, setScrolled] = useState(false);
 
+  const location = useLocation();
   const navigate = useNavigate();
 
   useEffect(() => {
-    let lastScrollY = window.scrollY;
-
     const handleScroll = () => {
-      const currentScrollY = window.scrollY;
+      const currentScrollY = Math.max(
+        window.scrollY,
+        document.documentElement.scrollTop,
+        document.body.scrollTop,
+        document.getElementById('root')?.scrollTop ?? 0,
+      );
 
       setScrolled(currentScrollY > 50);
-
-      if (currentScrollY > lastScrollY && currentScrollY > 100) {
-        setShowHeader(false);
-      } else if (currentScrollY < lastScrollY) {
-        setShowHeader(true);
-      }
-
-      lastScrollY = currentScrollY;
+      setShowHeader(currentScrollY <= 50);
     };
 
-    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+    document.addEventListener('scroll', handleScroll, { capture: true, passive: true });
 
-    return () => window.removeEventListener('scroll', handleScroll);
+    return () => document.removeEventListener('scroll', handleScroll, true);
   }, []);
 
   const menuItems = [
@@ -54,7 +53,7 @@ function NavHeader() {
   return (
     <>
       <header
-  className={`header ${showHeader ? 'show' : 'hide'} ${scrolled ? 'scrolled' : ''}`}
+  className={`header ${showHeader ? 'show' : 'hide'} ${scrolled ? 'scrolled' : ''} ${location.pathname === '/' && !scrolled ? 'home-hero-header' : ''}`}
 >
         <div
           className="logo"
